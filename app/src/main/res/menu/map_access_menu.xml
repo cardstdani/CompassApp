@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+
+    <!--- <item
+         android:id="@+id/mapButton"
+         app:showAsAction="always"
+         android:icon="@drawable/map_icon"
+         android:title="MapaItem"/>-->
+</menu>

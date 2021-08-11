@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColorD"
+    tools:context=".LocationInfoActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <Button
+        android:id="@+id/openMapsButon"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#434343"
+        android:drawableLeft="@drawable/open_icon"
+        android:drawableTint="#FFF"
+        android:fontFamily="sans-serif-medium"
+        android:padding="17dp"
+        android:text="Open in Maps"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/latitudeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Latitude \n ..."
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/longitudeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latitudeText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Longitude \n ..."
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/altitudeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/longitudeText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Altitude \n ..."
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/accuracyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/altitudeText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Accuracy \n ..."
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/speedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accuracyText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Speed \n ..."
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/providerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speedText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Provider \n ..."
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

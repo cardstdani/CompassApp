@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColorD"
+    tools:context=".DegreesActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <TextView
+        android:id="@+id/degreesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="degrees"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBarY"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="328dp"
+        android:layout_height="334dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="190dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/accelerometer_circle"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="50" />
+
+</RelativeLayout>
